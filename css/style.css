@@ -1,5 +1,5 @@
 body {
-    padding-top:40px;    /*80*/     
+    padding-top:80px; 
     color: #5a5a5a;
 }
 .row{
@@ -14,37 +14,34 @@ body {
 
  /* 顶部导航 */
 .navbar{
-    min-height:40px;   /*80*/     
+    min-height:80px;   
+    border-bottom-width:0px;   
+}
+.navbar-brand {
+    height: 80px;    
 }
 .navbar .navbar-brand img{
 	  max-width:200px;/*此处可修改成logo的宽度*/
-	  margin-top:-14px;
-}
-.navbar .navbar-brand{
+	  margin-top:-15px;
 
 }
-.navbar .navbar-right>li{
-    text-align:center;
+.navbar-nav>li{
+/*background-color:#ddd;  *//*设置下拉菜单背景颜色*/
 }
-/*.navbar .navbar-right>li>a{
-    line-height:50px;     /**/
-}       */
-
 .navbar-nav>li>a {
+/*text-align:center;    */
 padding-top: 10px;
 padding-bottom: 10px;
+line-height:60px;  
 }
-.navbar-brand {
-height: 40px;
 
-}
 .navbar-toggle {
-margin-top: 4px;
-margin-bottom: 4px;
+margin-top: 20px;
+margin-bottom: 20px;    
 }
 
 .navbar .navbar-nav>li>a:link,.navbar .navbar-nav>li>a:visited{
-	  font-size:16px;
+	  font-size:1rem;
 	  color:#333333;
 }
 .navbar .navbar-nav>li>a:hover,.navbar .navbar-nav>li>a:active{
@@ -81,53 +78,63 @@ margin-bottom: 4px;
     line-height: 1.8;
 }
 
-        /* 关于我们 */
+  /* 关于我们 */
 
   .about-us{
-	    text-align:center;
+	   text-align:center;
+      margin-bottom:6.25rem;
 	}
   .about-us h2{
-	    margin-top:100px;
+	    font-size:1.875rem;
+      margin-top:6.25rem;
 	}
 	.about-us p{
-	   
-	    margin:54px 0;
+      font-size:1.125rem;     
+	    text-align:left;
+      color:#333333;
+	    margin:3.375rem 0;
 	}
 	.about-us button{
-	    padding:5px 20px;
-	    color:#f00;
-	    border-color:#f00;
+      font-size:1.125rem; 
+	    padding:0.1875rem 3rem;
+	    color:#ea0000;
+	    border-color:#ea0000;
 	    
 	}
 	
 	/* 我们的产品 */
 	
 	.our-products{
-  	    text-align: center;
+  	  text-align: center;
 	    background-image: url(../images/product-img.jpg);
 	    height:100%;
 	    width:100%;
-	    margin-top:50px;
+	   
 
- 	}
-	.our-products .our-products-contain{
-	    margin:20px 0;
- 	}
-	.our-products h3{
-	    margin:40px 0;
+ 	} 
+.our-products-div  { 
+	    margin:3.125rem 0;        
+ 	   }                 
+	.our-products h2{
+      font-size:1.875rem;
+	    margin:3.125rem 0;
 	    color:#fff;
 	}
-	.our-products h5{
+	.our-products p{
+      font-size:1.75rem;
 	    color:#fff;
 	}
 	.our-products img{
-  	    height:130px;
-  	    width:130px;
+  	    height:8.125rem;   
+  	    width:8130px    /*?*/
+        margi130px:1.8/*?*/75rem;
  	}
-	
+	.our-products .our-products-buttom{
+       margin:3.125rem 0;
+  }
 	.our-products button{
-	    padding:5px 20px;
-	    margin-bottom: 50px;
+      font-size:1.125rem; 
+	    padding:0.1875rem 3rem;
 	    background-color:transparent;
 	    color:#fff;
 	    
@@ -135,72 +142,103 @@ margin-bottom: 4px;
 	
 	/* 成功案例 */
 	.case-works{
-  	    text-align: center;
+  	  text-align: center;
 	    height:100%;
 	    width:100%;
-	    margin-top:50px;
+      padding:0;
+	    margin-top:2.75rem;
 
  	}
-	.case-works .case-works-containe{
+  .case-works h2{
+      font-size:1.875rem;  
+	    margin:3.5rem 0;  
+	}
+	.case-works .case-works-img{
 	    background-image: url(../images/case-works-img.jpg);  
-	    margin-left:-15px;
-	    margin-right:-15px;
+     
 	    
 	}
-	.case-works h3{
-	    margin:40px 0;
+  .case-works .case-works-container{
+	  padding:2.375rem 0;  
+     
 	    
 	}
+
 	.case-works img{
-  	    height:150px;
-  	    width:230px;
-	    margin-top:20px;
- 	}
+  	   /* height:18.75rem;
+  	    width:27.5rem;   /**/
+      height:auto;  /*高度可以自己按比例确定*/
+  	  width:15rem;  
+	      margin-top:2.625rem;
+ 	} 
+
+  
 	.case-works button{
-	    padding:5px 20px;
-	    margin-top:20px;
-	    margin-bottom: 30px;
+	    font-size:1.125rem; 
+	    padding:0.1875rem 3rem;
+      margin:3.75rem auto;
+	    color:#ea0000;
+	    border-color:#ea0000;
 
 	}
-	
+       
 	/* 精英团队 */
+ 
 	.elite-team{
-  	    text-align: center;
-	    margin-top:30px;
+  	text-align: center;
 
  	}
-	.elite-team img{
-	    height:20%;
-  	    width:60%;
-  	    margin:20px 0;
+  .elite-team h2{
+      font-size:1.875rem;  
+   margin:2.5rem 0;
+   }
+  .elite-team-p{
+    font-size:1.125rem;
+    border:5px solid #fff;   
+    background-color:#f2f2f2;
+    margin:1.25rem 0;
+    margin-bottom:10rem;
+    padding:1.875rem 1.875rem 5rem 1.875rem;
+   }
+   .elite-team-img{
+   
+    position: absolute; left: 0;  right: 0;    
+    margin:0 auto;
+   }
+  .elite-team-img img{
+    width:50%;
+    height:auto;   }      
+   
 
- 	}
 	
 	/* 底部版权 */
 	.copyright{
-	    background:#333;
+	    background-color:#666666;
 	    width:100%;
 	    height:100%;
 	}
+  .copyright h5{	
+    font-size:1.125rem;
+	   color:#fff;
+	}
 	.copyright p{	
 	    color:#fff;
-	    font-size:10px;
-	}
-	.copyright h5{	
-	   color:#fff;
+	    font-size:0.875rem;
 	}
 
 	.copyright img{
-  	    height:150px;
-  	    width:230px;
+  	  width:22.875rem;
+  	  height:12.5rem;   
+      border:0.125rem solid #fff;
 	
  	}
 	.copyright .copyright-buttom-text p{
-  	    text-align:center;
+      font-size:0.75rem;
+  	  text-align:center;
 	
  	}
 	.copyright hr{
-		width:70%;
+		  width:68%;
 	}
 	
 	/*客户案例-头部*/
@@ -282,7 +320,7 @@ margin-bottom: 4px;
  	}
 	.contact-container img{
 		height:180px;
-  	    width:180px;
+  	width:180px;
 	}
 	.contact-container button{
 		border-radius:0;
@@ -290,16 +328,42 @@ margin-bottom: 4px;
 	
         /* 响应式布局 */
 
-        @media (max-width: 768px) {
-
-            .summary {
-                padding-right: 3px;
-                padding-left: 3px;
-            }
-
+        @media (max-width: 767px) { /*手机*/
+            /*适应手机的导航条*/
+             html{
+                  font-size:12px;
+             }
+             body {
+                  padding-top:50px; 
+              }
+              .navbar{
+                  min-height:50px;   /*80*/     
+              }
+              .navbar-brand {
+              height: 50px;    
+              }
+              .navbar .navbar-brand img{
+              	  max-height:50px;/*此处可修改成logo的高度*/
+              	  margin-top:-15px;
+              
+              }
+             
+              .navbar-nav>li>a {
+              text-align:center;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              line-height:30px;  
+              }
+              
+              .navbar-toggle {
+              margin-top: 8px;
+              margin-bottom: 8px;    
+              }
+            
+             /*轮播图设置*/
             .carousel {
                 height: 300px;
-                margin-bottom: 30px;
+              
             }
 
             .carousel .item {
@@ -322,10 +386,53 @@ margin-bottom: 4px;
             .feature-heading .text-muted {
                 font-size: 22px;
             }
+               
+            	.case-works img{
+              	    width:20rem;  
+             	} 
+              .our-products-div  { 
+              	    margin:1.25rem 0;        
+               	   }                 
+                             
+              
+            .elite-team-img img{
+              width:80%;
+              height:auto;   } 
+            .elite-team-p{
+              padding:1.875rem 1.875rem 2.75rem 1.875rem;
+              margin-bottom:13rem;
+              
+             }
+              .copyright img{
+                 	  width:18.5625rem;
+  	                height:10.125rem;
+ 	            }
+                  
+              
         }
-
-        @media (min-width: 992px) {
-            .feature-heading {
-                margin-top: 120px;
-            }
+        @media (min-width: 768px){ /*平板*/
+             html {
+                   font-size:12px;
+              }
+             	.copyright img{
+                 	  width:22.875rem;
+  	                height:12.5rem;
+ 	            }
+            	.case-works img{
+              	    width:30rem;  
+             	} 
+               
+              
+        }
+        @media (min-width: 992px) {    /*桌面*/
+              html {
+                 font-size:16px;
+              }
+              
+            	.case-works img{
+              	    width:15rem;  
+             	}         
+              
+            
+           
         }
