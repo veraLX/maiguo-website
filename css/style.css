@@ -29,15 +29,14 @@ body {
 /*background-color:#ddd;  *//*设置下拉菜单背景颜色*/
 }
 .navbar-nav>li>a {
-/*text-align:center;    */
-padding-top: 10px;
-padding-bottom: 10px;
-line-height:60px;  
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height:60px;  
 }
 
 .navbar-toggle {
-margin-top: 20px;
-margin-bottom: 20px;    
+    margin-top: 20px;
+    margin-bottom: 20px;    
 }
 
 .navbar .navbar-nav>li>a:link,.navbar .navbar-nav>li>a:visited{
@@ -55,8 +54,7 @@ margin-bottom: 20px;
 
 .carousel {
     height:100%;
-   /* margin-bottom: 100px;    */
-   margin-top:0; 
+    margin-top:0; 
 }
 
 .carousel .item {
@@ -80,58 +78,55 @@ margin-bottom: 20px;
 
   /* 关于我们 */
 
-  .about-us{
-	   text-align:center;
-      margin-bottom:6.25rem;
-	}
-  .about-us h2{
-	    font-size:1.875rem;
-      margin-top:6.25rem;
-	}
-	.about-us p{
-      font-size:1.125rem;     
-	    text-align:left;
-      color:#333333;
-	    margin:3.375rem 0;
-	}
-	.about-us button{
-      font-size:1.125rem; 
-	    padding:0.1875rem 3rem;
-	    color:#ea0000;
-	    border-color:#ea0000;
-	    
-	}
+.about-us{
+   text-align:center;
+    margin-bottom:6.25rem;
+}
+.about-us h2{
+    font-size:1.875rem;
+    margin-top:6.25rem;
+}
+.about-us p{
+    font-size:1.125rem;     
+    text-align:left;
+    color:#333333;
+    margin:3.375rem 0;
+}
+.about-us button{
+    font-size:1.125rem; 
+    padding:0.1875rem 3rem;
+    color:#ea0000;
+    border-color:#ea0000;
+    
+}
 	
 	/* 我们的产品 */
 	
-	.our-products{
-  	  text-align: center;
-	    background-image: url(../images/product-img.jpg);
-	    height:100%;
-	    width:100%;
-	   
-
- 	} 
+.our-products{
+	  text-align: center;
+    background-image: url(../images/product-img.jpg);
+    height:100%;
+    width:100%;
+} 
 .our-products-div  { 
-	    margin:3.125rem 0;        
- 	   }                 
-	.our-products h2{
-      font-size:1.875rem;
-	    margin:3.125rem 0;
-	    color:#fff;
-	}
-	.our-products p{
-      font-size:1.75rem;
-	    color:#fff;
-	}
-	.our-products img{
-  	    height:8.125rem;   
-  	    width:8130px    /*?*/
-        margi130px:1.8/*?*/75rem;
- 	}
-	.our-products .our-products-buttom{
-       margin:3.125rem 0;
-  }
+padding:0 1rem;
+    margin:3.125rem 0;        
+}    
+.our-products-div  img{ 
+    margin:1rem 0;        
+}              
+.our-products h2{
+    font-size:1.875rem;
+    margin:3.125rem 0;
+    color:#fff;
+}
+.our-products p{
+    font-size:1.75rem;
+    color:#fff;
+}
+.our-products .our-products-buttom{
+     margin:3.125rem 0;
+}
 	.our-products button{
       font-size:1.125rem; 
 	    padding:0.1875rem 3rem;
@@ -314,105 +309,143 @@ margin-bottom: 20px;
  	}
 	
 	/*联系-联系我们部分*/
-	.contact-container .contact-container-right{
-		text-align: center;
+   .contact-container {
+	 margin-top:4.625rem;
   	   
  	}
-	.contact-container img{
-		height:180px;
-  	width:180px;
-	}
-	.contact-container button{
-		border-radius:0;
-	}
+   .contact-container h2{
+	 font-size:1.875rem;
+   margin:2.375rem 0;
+  	   
+ 	}
+   .contact-container p{
+	 font-size:1.125rem;
+   margin-bottom:1.875rem;
+  	   
+ 	}
+ 
+.contact-container-right{
+   margin:1.875rem auto;
+  	   
+ 	}
+.contact-container-right p{
+ padding:2rem 2.1875rem;  /*2   4.375*/
+ font-size:1rem;
+ margin:0;
+	   
+}
+.contact-container-right img{
+    margin:auto auto;
+}
+.contact-container button{
+  font-size:1.125rem;
+	border-radius:0;
+}
+	.connect-copyright .copyright-buttom-text p{
+    font-size:0.75rem;
+	  text-align:center;
+
+}
+.connect-top-img img{
+  width:100%;
+  height:auto;   
+}
+ .connect-bottom-img img{
+  margin-top:9.375rem;    
+  width:100%;
+  height:auto;   
+}
+
+.copyright-bottom{
+    margin:5.25rem auto;
+}
+.copyright-buttom-text{
+     font-size:1rem;
+}
 	
         /* 响应式布局 */
 
         @media (max-width: 767px) { /*手机*/
             /*适应手机的导航条*/
-             html{
-                  font-size:12px;
-             }
-             body {
-                  padding-top:50px; 
-              }
-              .navbar{
-                  min-height:50px;   /*80*/     
-              }
-              .navbar-brand {
-              height: 50px;    
-              }
-              .navbar .navbar-brand img{
-              	  max-height:50px;/*此处可修改成logo的高度*/
-              	  margin-top:-15px;
-              
-              }
-             
-              .navbar-nav>li>a {
-              text-align:center;
-              padding-top: 10px;
-              padding-bottom: 10px;
-              line-height:30px;  
-              }
-              
-              .navbar-toggle {
-              margin-top: 8px;
-              margin-bottom: 8px;    
-              }
+            html{
+                font-size:12px;
+            }
+            body {
+                padding-top:50px; 
+            }
+            .navbar{
+                min-height:50px;   /*80*/     
+            }
+            .navbar-brand {
+                height: 50px;    
+            }
+            .navbar .navbar-brand img{
+            	  max-height:50px;/*此处可修改成logo的高度*/
+            	  margin-top:-15px;
+            
+            }
+            .navbar-nav>li>a {
+                text-align:center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                line-height:30px;  
+            }           
+            .navbar-toggle {
+                margin-top: 8px;
+                margin-bottom: 8px;    
+            }
             
              /*轮播图设置*/
             .carousel {
-                height: 300px;
-              
+                height: 300px; 
             }
-
             .carousel .item {
                 height: 300px;
             }
-
             .carousel img {
                 min-height: 300px;
             }
-
             .carousel-caption p {
                 font-size: 16px;
                 line-height: 1.4;
             }
-
             .feature-heading {
                 font-size: 34px;
             }
-
             .feature-heading .text-muted {
                 font-size: 22px;
-            }
-               
-            	.case-works img{
-              	    width:20rem;  
-             	} 
-              .our-products-div  { 
-              	    margin:1.25rem 0;        
-               	   }                 
-                             
-              
+            }  
+           	.case-works img{
+                width:20rem;  
+            } 
+            .our-products-div  { 
+                margin:1.25rem 0;        
+            }                   
             .elite-team-img img{
-              width:80%;
-              height:auto;   } 
+                width:80%;
+                height:auto;   
+            } 
             .elite-team-p{
-              padding:1.875rem 1.875rem 2.75rem 1.875rem;
-              margin-bottom:13rem;
-              
-             }
-              .copyright img{
-                 	  width:18.5625rem;
-  	                height:10.125rem;
- 	            }
+                padding:1.875rem 1.875rem 2.75rem 1.875rem;
+                margin-bottom:13rem;             
+            }
+            .copyright img{
+                width:18.5625rem;
+  	            height:10.125rem;
+ 	          }
+              /*联系界面*/
+             .connect-bottom-img img{
+                margin-top:3.125rem;    
+            }
+             .contact-container-right p{
+                padding:2rem 4.375rem;  
+            }
                   
               
         }
         @media (min-width: 768px){ /*平板*/
-             html {
-                   font-size:12px;
+              html {
+                  font-size:12px;
               }
              	.copyright img{
                  	  width:22.875rem;
@@ -421,6 +454,13 @@ margin-bottom: 20px;
             	.case-works img{
               	    width:30rem;  
              	} 
+              /*联系部分*/
+              .connect-bottom-img img{
+                    margin-top:6.25rem;    
+            	}
+              .contact-container-right p{
+                   padding:2rem 4.375rem;  
+              }
                
               
         }
@@ -430,8 +470,15 @@ margin-bottom: 20px;
               }
               
             	.case-works img{
-              	    width:15rem;  
-             	}         
+              	  width:15rem;  
+             	}  
+             /*联系部分*/
+              .connect-bottom-img img{
+                  margin-top:9.375rem;    
+              }  
+              .contact-container-right p{
+                  padding:2rem 2.1875rem;  
+             	}     
               
             
            
