@@ -62,7 +62,7 @@ body {
     background-color: #000;
 }
 
- .carousel .item img {
+.carousel .item img {
     width: 100%;
 }
 
@@ -75,6 +75,7 @@ body {
     font-size: 20px;
     line-height: 1.8;
 }
+
 
 /* 关于我们 */
 
@@ -149,25 +150,17 @@ body {
     margin:3.5rem 0;  
 }
 .case-works .case-works-img{
-    background-image: url(../images/case-works-img.jpg);  
-   
-    
+    background-image: url(../images/case-works-img.jpg);    
 }
 .case-works .case-works-container{
-  padding:2.375rem 0;  
-   
-    
+    padding:2.375rem 0;    
 }
 
 .case-works img{
-	   /* height:18.75rem;
-	    width:27.5rem;   /**/
     height:auto;  /*高度可以自己按比例确定*/
 	  width:15rem;  
-      margin-top:2.625rem;
+    margin-top:2.625rem;
 } 
-
-
 .case-works button{
     font-size:1.125rem; 
     padding:0.1875rem 3rem;
@@ -183,9 +176,16 @@ body {
 	text-align: center;
 
 }
+.elite-team .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
 .elite-team h2{
-    font-size:1.875rem;  
- margin:2.5rem 0;
+  font-size:1.875rem;  
+  margin:2.5rem 0;
  }
 .elite-team-p{
   font-size:1.125rem;
@@ -209,8 +209,10 @@ body {
 /* 底部版权 */
 .copyright{
     background-color:#666666;
-    width:100%;
-    height:100%;
+    padding:0;
+}
+.copyright-top{
+   margin-top:1.25rem;
 }
 .copyright h5{	
   font-size:1.125rem;
@@ -222,8 +224,8 @@ body {
 }
 
 .copyright img{
-	  width:22.875rem;
-	  height:auto;  /*12.5rem*/ 
+	  max-width:100%;
+	  float:right;
     border:0.125rem solid #fff;
 
 }
@@ -233,19 +235,21 @@ body {
 
 }
 .copyright hr{
-	  width:85%;
+	  width:83.333%;
 }
 
 /*客户案例-头部*/
 .case-head h2{
-    color:#000;
-    text-align:center;
-    margin:20px 0;
+  text-align:center;
+  margin-top:5rem;
+  margin-bottom:1.25rem;
+  font-size:2.25rem;
 }
 .case-head p{
     color:#000;
+    font-size:1.125rem;
+    line-height:1.125rem;
     text-align:center;
-    line-height:10px;
 }
 /*客户案例-内容部分*/
 .case-container{
@@ -253,16 +257,7 @@ body {
    padding:0;
    margin:6.25rem 0;  
 }
-.case-head h2{
-  margin-top:5rem;
-  margin-bottom:1.25rem;
-  font-size:2.25rem;
-}
-.case-head p{
-  font-size:1.125rem;
-  line-height:1.125rem;
-  /*white-space:nowrap; */
-}
+
 .case-container p{
    font-size:1rem;  
 }
@@ -272,11 +267,12 @@ body {
 	  width:23vw;
 }
 .case-container .case-container-text{ 
-    padding:0 0.8vw;   
+    width:23vw;
+    margin:0 auto;
 }
 .case-container .case-container-text-inside{
     background-color:#f2f2f2;
-    padding:10px;
+    padding:10px;     
     vertical-align:middle; 
     text-align:left;
     color:#333333;
@@ -314,7 +310,7 @@ body {
 .about-elite-team h3{
     font-size:1.875rem;
     margin:3.125rem 0;
-    /*text-align:center;   */
+    text-align:center;   
 
 }
 .about-elite-team p{
@@ -323,26 +319,21 @@ body {
     /*text-align:left;*/
     margin-bottom:1.25rem;  
 }
-/*.about-elite-team img{
-    margin:5rem 0;
-}*/
 .about-elite-team-img img{
     margin:5rem 0;
 }
 
-/*产品中心-产品服务部分*/
+/*产品中心-我们的产品部分*/
 .products-head{
 	  text-align: center;
     background-image: url(../images/product-img.jpg);
     height:100%;
     width:100%;
-    padding-bottom:2rem;/**/
+    padding-bottom:2rem;
 } 
 .products-head-div  { 
     padding:0 1rem;
-    margin:3.125rem 0; 
-    /*margin-top:1rem;
-    margin-bottom:2rem;  */      
+    margin:3.125rem 0;     
 }    
 .products-head-div  img{
     margin:1rem 0;       
@@ -356,7 +347,7 @@ body {
     font-size:1.75rem;
     color:#fff;
 }
-
+/*产品中心-内容部分*/
 .products-container{
 	  text-align: center;
     padding:0;
@@ -380,19 +371,23 @@ body {
     font-size:1.125rem;    
 }
 .products-container .products-container-left img{
+
   	width:12.5rem;
-  	height:12.5rem;
+  	height:12.5rem; 
 }
 .products-container .products-container-right{
   	height:600px;
 }
 .products-container .products-container-right img{
-  	/*width:auto; */
-    max-width:100%;
+   width:auto;
   	height:100%;
 }
-
-/*联系-联系我们部分*/
+/*联系-头部图片部分*/
+.contact-top-img img{
+  width:100%;
+  height:auto;   
+}
+/*联系-内容部分*/
 .contact-container {
    margin-top:4.625rem;
 	   
@@ -425,27 +420,23 @@ body {
   font-size:1.125rem;
 	border-radius:0;
 }
-.connect-copyright .copyright-buttom-text p{
-  font-size:0.75rem;
-	text-align:center;
-
-}
-.connect-top-img img{
-  width:100%;
-  height:auto;   
-}
-.connect-bottom-img img{
+/*联系-底部图片部分*/ 
+.contact-bottom-img img{
   margin-top:9.375rem;    
   width:100%;
   height:auto;   
 }
 
-.copyright-bottom{
+/*联系-底部版权部分*/ 
+.contact-copyright .contact-copyright-buttom-text p{
+  font-size:0.75rem;
+	text-align:center;
+
+}
+.contact-copyright-bottom{
   margin:5.25rem auto;
-}
-.copyright-buttom-text{
-    font-size:1rem;
-}
+} 
+
 	
         /* 响应式布局 */
 
@@ -457,6 +448,7 @@ body {
             body {
                 padding-top:50px; 
             }
+            /*导航条*/
             .navbar{
                 min-height:50px;   /*80*/     
             }
@@ -478,33 +470,15 @@ body {
                 margin-top: 8px;
                 margin-bottom: 8px;    
             }
-            
-             /*轮播图设置*/
-            .carousel {
-                height: 300px; 
-            }
-            .carousel .item {
-                height: 300px;
-            }
-            .carousel img {
-                min-height: 300px;
-            }
-            .carousel-caption p {
-                font-size: 16px;
-                line-height: 1.4;
-            }
-            .feature-heading {
-                font-size: 34px;
-            }
-            .feature-heading .text-muted {
-                font-size: 22px;
-            }  
+            /*成功案例*/
            	.case-works img{
                 width:20rem;  
             } 
+            /*我们的产品*/
             .our-products-div  { 
                 margin:1.25rem 0;        
-            }                   
+            } 
+            /*精英团队*/                  
             .elite-team-img img{
                 width:80%;
                 height:auto;   
@@ -513,25 +487,27 @@ body {
                 padding:1.875rem 1.875rem 2.75rem 1.875rem;
                 margin-bottom:13rem;             
             }
+            /*底部版权*/
             .copyright img{
-                width:18.5625rem;
-  	            height:10.125rem;
- 	          }
-              /*联系界面*/
+            	  float:left;
+            } 
+            
+            /*联系我们  界面*/
              .connect-bottom-img img{
                 margin-top:3.125rem;    
             }
              .contact-container-right p{
                 padding:2rem 4.375rem;  
             }
-            /*客户案例部分*/
-              .case-container img{
+            /*客户案例  部分*/
+            .case-container img{
               	  width:47vw;  
             }
             .case-container .case-container-text{ 
-                  padding:0 1.45vw;   
+                  width:47vw;
+                  margin:0 auto;   
             }
-            /*产品中心部分*/
+            /*产品中心  部分*/
             .products-head p{
                 font-size:1.125rem;
             }
@@ -573,28 +549,26 @@ body {
               html {
                   font-size:12px;
               }
-             	.copyright img{
-                 	  width:22.875rem;
-  	                height:12.5rem;
- 	            }
             	.case-works img{
               	    width:30rem;  
              	} 
-              /*联系部分*/
+              /*联系我们  部分*/
               .connect-bottom-img img{
                     margin-top:6.25rem;    
             	}
               .contact-container-right p{
                    padding:2rem 4.375rem;  
               }
-              /*客户案例部分*/
+              /*客户案例  部分*/
               .case-container img{
               	  width:47vw;
               } 
               .case-container .case-container-text{ 
-                  padding:0 1.45vw;   
+                 /* padding:0 1.5vw;      */
+                  width:47vw; 
+                  margin:0 auto;
               }
-              /*产品中心部分*/
+              /*产品中心  部分*/
               .products-container .products-container-left{	 
                 	padding:15%;    
               }
@@ -616,17 +590,4 @@ body {
                  font-size:16px;
               }
               
-            	/*.case-works img{
-              	  width:15rem;  
-             	}  
-             /*联系部分*/
-             /* .connect-bottom-img img{
-                  margin-top:9.375rem;    
-              }  
-              .contact-container-right p{
-                  padding:2rem 2.1875rem;  
-             	}     */    
-                    
-            
-           
         }

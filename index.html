@@ -56,31 +56,31 @@
         <li data-target="#ad-carousel" data-slide-to="4"></li>
     </ol>
     <div class="carousel-inner">
-        <div class="item active">
+        <div class="item active" id="item1" >
             <img src="images/slide1.jpg" alt="1 slide">
             <div class="container">
                 <div class="carousel-caption"></div>
             </div>
         </div>
-        <div class="item">
+        <div class="item" id="item2">
             <img src="images/slide2.jpg" alt="2 slide">
             <div class="container">
                 <div class="carousel-caption"></div>
             </div>
         </div>
-        <div class="item">
+        <div class="item"  id="item3">
             <img src="images/slide3.jpg" alt="3 slide">
             <div class="container">
                 <div class="carousel-caption"></div>
             </div>
         </div>
-        <div class="item">
+        <div class="item" id="item4">
             <img src="images/slide4.jpg" alt="4 slide">
             <div class="container">
                 <div class="carousel-caption"></div>
             </div>
         </div>
-        <div class="item">
+        <div class="item" id="item5">
             <img src="images/slide5.jpg" alt="5 slide">
             <div class="container">
                 <div class="carousel-caption"></div>
@@ -93,6 +93,8 @@
             class="glyphicon glyphicon-chevron-right"></span></a>
 </div>
 
+
+ 
 <!-- 关于我们 -->
 <div class="container about-us">
 	<div class="row">
@@ -120,11 +122,11 @@
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-3 our-products-div">
 					<img src="images/product-img02.png" alt="" />
-					<p>股票交易系统开发</p>
+					<p>股票策略系统开发</p>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-3 our-products-div">
 					<img src="images/product-img03.png" alt="" />
-					<p>期货交易系统开发</p>
+					<p>期货策略系统开发</p>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-3 our-products-div">
 					<img src="images/product-img04.png" alt="" />
@@ -223,10 +225,9 @@
 
 
 <!-- 底部版权 -->
-<div class="container copyright">
-        <div class="clearfix" style="margin-bottom: 20px;"></div>
-		<div class="row">
-			<div class="col-xs-2 col-sm-2 col-md-2">
+<div class="container-fluid copyright">
+		<div class="row copyright-top">
+			<div class="col-xs-1 col-sm-1 col-md-1">
 			</div>
 			<div class="col-xs-10 col-sm-4 col-md-4">
 				<h5>联系我们&#40;Contact US&#41;</h5>
@@ -236,24 +237,51 @@
 				<p>邮箱：000&#64;000.com</p>
 				<p>地址：宁波市鄞州.南部商务区 中基大厦1203</p>
 			</div>
-			<div class="col-xs-10 col-sm-4 col-md-4">
-				<img class=" pull-right" src="images/adress.jpg"></img>
+			<div class="col-xs-1 col-sm-1 col-md-1">
 			</div>
-			<div class="col-xs-2 col-sm-2 col-md-2">
+			<div class="col-xs-1 col-sm-1 col-md-1">
+			</div>
+			<div class="col-xs-10 col-sm-4 col-md-4">
+				<img src="images/adress.jpg"></img>
+			
+			</div>
+			<div class="col-xs-1 col-sm-1 col-md-1">
 			</div>
 		</div>
 		<hr>
 		<div class="rom copyright-buttom-text">
-			<div class="col-xs-12 col-sm-12 col-md-12">
+			<div class="col-xs-12 col-sm-12 col-md-12 center-block">
 				<p>*****************宁波麦果网络科技有限公司*****************</p>
 				<p>浙ICP备17017949号</p>
 			</div>
 		</div>
 
 </div>
-
 <script src="js/jquery-1.11.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>	
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+window.setInterval(changImg, 500);
+function changImg(){
+	var result=window.matchMedia('(max-width:767px)');
+	if (result.matches) {
+	  //console.log( result );
+	  $("#item1>img").attr("src", "images/slide1-small.jpg");
+	  $("#item2>img").attr("src", "images/slide2-small.jpg");
+	  $("#item3>img").attr("src", "images/slide3-small.jpg");
+	  $("#item4>img").attr("src", "images/slide4-small.jpg");
+	  $("#item5>img").attr("src", "images/slide5-small.jpg");
+	}else
+	{
+	  $("#item1>img").attr("src", "images/slide1.jpg");
+	  $("#item2>img").attr("src", "images/slide2.jpg");
+	  $("#item3>img").attr("src", "images/slide3.jpg");
+	  $("#item4>img").attr("src", "images/slide4.jpg");
+	  $("#item5>img").attr("src", "images/slide5.jpg");
+	}
+}
+
+</script>
 
 </body>
 </html>
