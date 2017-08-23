@@ -49,6 +49,14 @@ body {
 .navbar-default{
 	  background-color:#FFF;
 }
+/*
+.navbar-text{
+position: absolute;
+margin:0;
+font-size:0.875rem;
+top:30px; 
+right: 0;
+} */                   s
 
 /* 轮播广告 */
 
@@ -176,13 +184,13 @@ body {
 	text-align: center;
 
 }
-.elite-team .row {
+/*.elite-team .row {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
-}
+}  */
 .elite-team h2{
   font-size:1.875rem;  
   margin:2.5rem 0;
@@ -195,8 +203,7 @@ body {
   margin-bottom:10rem;
   padding:1.875rem 1.875rem 5rem 1.875rem;
  }
- .elite-team-img{
- 
+.elite-team-img{
   position: absolute; left: 0;  right: 0;    
   margin:0 auto;
  }
@@ -376,12 +383,10 @@ body {
   	height:12.5rem; 
 }
 .products-container .products-container-right{
+    overflow: hidden; 
   	height:600px;
 }
-.products-container .products-container-right img{
-   width:auto;
-  	height:100%;
-}
+
 /*联系-头部图片部分*/
 .contact-top-img img{
   width:100%;
@@ -478,9 +483,12 @@ body {
             .our-products-div  { 
                 margin:1.25rem 0;        
             } 
-            /*精英团队*/                  
+            /*精英团队*/
+            .elite-team{
+                margin-bottom:6.25rem;
+            }                  
             .elite-team-img img{
-                width:80%;
+                width:50%;
                 height:auto;   
             } 
             .elite-team-p{
@@ -535,12 +543,20 @@ body {
             .products-container .products-container-left{	
                 height:300px;
               	background-color:#ddd;  
-              	padding:10%;    
+              	padding:10%;
+                   
             }     
            
-            .products-container .products-container-right{    
+            .products-container .products-container-right{
+                overflow: hidden; 
+                width:100vw;
               	height:300px;
             }
+            .products-container .products-container-right img{	
+                position:absolute;
+                height:100%;
+                left:0rem;     
+              }                 
             
                               
               
@@ -581,7 +597,12 @@ body {
               	padding:8%;    
                }
                .products-container .products-container-right{	
-                height:400px;    
+                overflow: hidden; 
+              	height:400px; 
+               }
+               .products-container .products-container-right img{	
+                position:absolute;
+                left:-25rem;             
                }
               
         }
