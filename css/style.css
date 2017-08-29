@@ -442,25 +442,28 @@ right: 0;
   margin:5.25rem auto;
 } 
 /**/
-#demoTop {
-    background: #ffffff;
-    position: fixed;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.5);
-    text-align: center;
-    height: 40px;
-    width: 40px;
-    line-height: 30px;
-    color: #333333;
-    border-radius: 80px;
-    left: 95.5%;
-    top: 91%;
-    display: block;
-    z-index: 99999;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-    }
+#topBtn { 
+    height:3.125rem;               
+    width:3.125rem;
+    position: fixed;  
+    left: 94%;
+    top: 88%;
+    /*display: block; */
+    display: none; 
+    z-index:100;
+    padding:5px;   
+}
+#topBtn img{
+    height:100%;               
+    width:100%; 
+}
+/*#topBtn:link,#topBtn:visited{
+    background: url(../images/top-1.png) no-repeat;
+}
+#topBtn:hover,#topBtn:active{
+	  background: url(../images/top-2.png) no-repeat;
+}  */
+
 
 	
         /* 响应式布局 */
@@ -473,6 +476,10 @@ right: 0;
             body {
                 padding-top:50px; 
             }
+            #topBtn { 
+                  left:82%;
+                  top:90%;    
+              }
             /*导航条*/
             .navbar{
                 min-height:50px;   /*80*/     
@@ -589,7 +596,10 @@ right: 0;
               }
             	.case-works img{
               	    width:30rem;  
-             	} 
+             	}
+              #topBtn {  
+                  top: 90%;    
+              }
               /*联系我们  部分*/
               .connect-bottom-img img{
                     margin-top:6.25rem;    

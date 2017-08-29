@@ -74,9 +74,51 @@
 		</div>
 
 </div>
-
+<!--回到顶部-->
+<div id="topBtn"> 
+	<img class="top-1" src="images/top-1.png"/>
+	<img class="top-2" src="images/top-2.png"/>
+</div> 
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>	
-
+<script>
+jQuery(document).ready(function($){ 
+	//智能隐藏
+	$(window).scroll(function(){
+		var sc=$(window).scrollTop();
+		var rwidth=$(window).width()+$(document).scrollLeft();
+		var rheight=$(window).height()+$(document).scrollTop();
+		if(sc>100){
+			$("#topBtn").fadeIn(1500);
+			$("#topBtn").css("display","block");
+			//$("#topBtn").css("left",(rwidth-80)+"px");
+			//$("#topBtn").css("top",(rheight-120)+"px");
+		}else{
+			$("#topBtn").fadeOut(1500);
+			$("#topBtn").css("display","none");
+		}
+	});
+    //回到顶部    
+    $('#topBtn').click(function(){  
+        $('html,body').stop();  
+        $('html,body').animate({  
+            scrollTop:'0px'  
+        },1000);	
+    });
+	//鼠标放置切换图片
+	$(".top-2").hide();
+	$("#topBtn").hover(
+		function(){
+			$(this).children(".top-1").hide();
+			$(this).children(".top-2").show();
+		}
+		, function(){
+			$(this).children(".top-2").hide();
+			$(this).children(".top-1").show();
+		}
+	);
+	
+}); 
+</script>
 </body>
 </html>
